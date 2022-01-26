@@ -1,54 +1,54 @@
 
 /* Q1 */
-/* SELECT ProductID, Name, Color, ListPrice
-FROM Production.Product */
+SELECT ProductID, Name, Color, ListPrice
+FROM Production.Product
 
 /* Q2 */
-/* SELECT ProductID, Name, Color, ListPrice
+SELECT ProductID, Name, Color, ListPrice
 FROM Production.Product
-WHERE ListPrice <> 0 */
+WHERE ListPrice <> 0
 
 /* Q3 */
-/* SELECT ProductID, Name, Color, ListPrice
+SELECT ProductID, Name, Color, ListPrice
 FROM Production.Product
-WHERE Color IS NULL */
+WHERE Color IS NULL
 
 /* Q4 */
-/* SELECT ProductID, Name, Color, ListPrice
-FROM Production.Product
-WHERE Color IS NOT NULL */
-
-/* Q5 */
-/* SELECT ProductID, Name, Color, ListPrice
+SELECT ProductID, Name, Color, ListPrice
 FROM Production.Product
 WHERE Color IS NOT NULL
-AND ListPrice > 0 */
+
+/* Q5 */
+SELECT ProductID, Name, Color, ListPrice
+FROM Production.Product
+WHERE Color IS NOT NULL
+AND ListPrice > 0
 
 /* Q6 */
-/* SELECT CONCAT(Name, Color) AS NameColor
+SELECT CONCAT(Name, Color) AS NameColor
 FROM Production.Product
-WHERE Color IS NOT NULL */
+WHERE Color IS NOT NULL
 
 /* Q7 */
-/* SELECT Name, Color 
+SELECT Name, Color 
 FROM Production.Product
-WHERE Name LIKE '%Crankarm' OR NAME LIKE 'Chainring%' */
+WHERE Name LIKE '%Crankarm' OR NAME LIKE 'Chainring%'
 
 
 /* Q8 */
-/* SELECT ProductID, Name
+SELECT ProductID, Name
 FROM Production.Product
-WHERE ProductID BETWEEN 400 AND 500 */
+WHERE ProductID BETWEEN 400 AND 500
 
 /* Q9 */
-/* SELECT ProductID, Name, Color
+SELECT ProductID, Name, Color
 FROM Production.Product
-WHERE Color = 'Black' OR Color = 'Blue' */
+WHERE Color = 'Black' OR Color = 'Blue'
 
 /* Q10 */
-/*SELECT Name, ProductID
+SELECT Name, ProductID
 FROM Production.Product
-WHERE Name LIKE 'S%' */
+WHERE Name LIKE 'S%'
 
 /* Q11 */
 SELECT Name, ListPrice
@@ -57,28 +57,22 @@ WHERE Name LIKE 'S%'
 ORDER BY Name
 
 /* Q12 */
-/* SELECT Name, ListPrice
+SELECT Name, ListPrice
 FROM Production.Product
 WHERE Name LIKE '[SA]%'
-ORDER BY Name ASC */
+ORDER BY Name ASC
 
 /* Q13 */
-/* SELECT Name
+SELECT Name
 FROM Production.Product
-WHERE NAME LIKE 'SPO[^K]%' */
+WHERE NAME LIKE 'SPO[^K]%'
 
 /* Q14 */
-/* SELECT DISTINCT Color
+SELECT DISTINCT Color
 FROM Production.Product
-ORDER BY Color DESC */
+ORDER BY Color DESC
 
 /* Q15 */
-/* SELECT DISTINCT ProductSubcategoryID, Color
+SELECT DISTINCT ProductSubcategoryID, Color
 FROM Production.Product
-WHERE ProductSubcategoryID IS NOT NULL AND Color IS NOT NULL */
-
-
-
-
-
-
+WHERE ProductSubcategoryID IS NOT NULL AND Color IS NOT NULL
