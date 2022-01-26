@@ -1,1 +1,1 @@
-# Antra-SQL
+# Antra SQL Training
